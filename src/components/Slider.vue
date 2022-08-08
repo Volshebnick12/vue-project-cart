@@ -113,7 +113,7 @@ p {
 
 .slider__cards-wrapper {
   display: flex;
-  transition: all ease 2s;
+  transition: all ease 1s;
 }
 
 .slider__cards-prev {

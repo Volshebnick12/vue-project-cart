@@ -11,7 +11,7 @@
           :product_data="card"
           :index="index"
         />
-        <Check-install />
+        <Check-install :class="eachInstallClass" />
         <OrderCreated :class="eachOrderClass" />
       </div>
       <div>
@@ -56,12 +56,15 @@ export default {
       return this.$store.state.cards.length
     },
     eachOrderClass() {
-      if (this.$store.state.order.length > 1) {
+      if (this.$store.state.order.length) {
         return 'cart__order'
-      } else {
-        return 'cart__order--hidden'
-      }
+      } return 'cart__order--hidden'
     },
+    eachInstallClass() {
+      if (this.$store.state.cards.length) {
+        return 'cart__install'
+      }  return 'cart__install--hidden'
+    }
   },
 }
 </script>
@@ -96,7 +99,7 @@ p {
 }
 
 .cart__order--hidden,
-.cart__install-hidden {
+.cart__install--hidden {
   display: none;
 }
 

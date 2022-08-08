@@ -1,7 +1,7 @@
 <template>
   <div class="card">
-    <div>
-      <img className="card__img" :src="product_data.image" alt="product" />
+    <div class="card__img-wrapper">
+      <img class="card__img" :src="product_data.image" alt="product" />
     </div>
     <div class="card__block">
       <h1 class="card__block-title">{{ product_data.name }} {{ product_data.model }}</h1>
@@ -107,6 +107,11 @@ p {
   position: relative;
   margin-top: 25px;
 }
+  
+  .card__img-wrapper {
+    width: 120px;
+    text-align: center;
+  }
 
 .card__img {
   height: 70px;

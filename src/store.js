@@ -166,8 +166,9 @@ const store = createStore({
       state.cards[index].amount = amount
     },
     newOrder: (state) => {
-      state.order = state.cards.splice()
+      state.order = state.cards.slice()
       state.cards.length = 0
+      console.log(state.order)
     },
   },
   actions: {
