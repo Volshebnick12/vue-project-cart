@@ -1,3 +1,6 @@
+# Корзина магазина (проект на Vue.js)
+
+### Проект можно посмотреть здесь: [https://magazin-cart.netlify.app] (https://magazin-cart.netlify.app)
 # vue-test-cart
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -19,7 +22,7 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+npm run start
 ```
 
 ### Compile and Minify for Production
