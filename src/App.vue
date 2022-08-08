@@ -1,26 +1,21 @@
 <template>
   <div>
-    <cart />
+    <Cart />
   </div>
 </template>
 
 <script>
 import Cart from './components/Cart.vue'
 
-
-
 export default {
-  name:"App",
-  data() {
-    return {
-
-    }
-  },
+  name: 'App',
   components: {
-    Cart
+    Cart,
+  },
+  data() {
+    return {}
+  },
 }
-}
-
 </script>
 
 <style>
